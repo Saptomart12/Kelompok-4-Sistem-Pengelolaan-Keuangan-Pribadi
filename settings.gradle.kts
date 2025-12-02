@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "foursave"
+rootProject.name = "FourSave"
 include(":app")
+ 

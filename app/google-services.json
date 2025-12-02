@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329815444928",
+    "project_id": "foursave-keren",
+    "storage_bucket": "foursave-keren.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329815444928:android:f9420d64980ed71c3bcc25",
+        "android_client_info": {
+          "package_name": "com.example.foursave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIS9HwBRiMLlW50W8Z2sUTCYVUTJXyxDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
