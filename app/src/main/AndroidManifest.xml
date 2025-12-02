@@ -10,11 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/Theme.FourSave">
-=======
-        android:theme="@style/Theme.Foursave">
->>>>>>> bb82cc1fb87c6fc4bdcd2c391002d3c11a2a1b18
         <activity
             android:name=".MainActivity"
             android:exported="true">
