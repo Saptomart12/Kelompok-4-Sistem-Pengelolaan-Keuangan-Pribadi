@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <color name="teal_primary">#4DB6AC</color>
     <color name="teal_dark">#009688</color>
     <color name="text_link">#2E8B57</color>
     <color name="income_green">#4CAF50</color>
     <color name="expense_red">#F44336</color>
-=======
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
->>>>>>> bb82cc1fb87c6fc4bdcd2c391002d3c11a2a1b18
+
+    <color name="income_green_bg">#E8F5E9</color>
+    <color name="expense_red_bg">#FFEBEE</color>
 </resources>

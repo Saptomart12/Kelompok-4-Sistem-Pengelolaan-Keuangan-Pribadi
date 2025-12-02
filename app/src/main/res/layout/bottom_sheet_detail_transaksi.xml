@@ -7,6 +7,7 @@
     android:background="@drawable/bg_bottom_sheet"
     android:padding="24dp">
 
+    <!-- Handle Bar -->
     <View
         android:layout_width="40dp"
         android:layout_height="4dp"
@@ -17,199 +18,155 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Transaction Detail"
-        android:textSize="24sp"
+        android:text="Detail Transaksi"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/teal_dark"
         android:layout_marginBottom="20dp"/>
 
-    <androidx.cardview.widget.CardView
+    <!-- Bagian Icon & Nominal -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:gravity="center">
+        <!-- ID: cvDetailInisial -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDetailInisial"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="#E0F2F1"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="16dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:id="@+id/ivCategoryIcon"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_food_placeholder"
-                    android:background="#FFCCBC"
-                    android:scaleType="centerInside"
-                    android:padding="16dp"
-                    android:contentDescription="Category Icon"/>
-
-            </androidx.cardview.widget.CardView>
-
+            <!-- ID: tvDetailInisial -->
             <TextView
-                android:id="@+id/tvDetailAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="- Rp12.000"
+                android:id="@+id/tvDetailInisial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="M"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:textColor="@color/expense_red"
-                android:layout_marginBottom="8dp"/>
+                android:textColor="@color/teal_primary"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvDetailCategory"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food"
-                android:textSize="16sp"
-                android:textColor="@android:color/darker_gray"/>
+        <!-- ID: tvDetailAmount -->
+        <TextView
+            android:id="@+id/tvDetailAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 15.000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/expense_red"/>
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <!-- ID: tvDetailType -->
+        <TextView
+            android:id="@+id/tvDetailType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengeluaran"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Information"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/teal_dark"
-        android:layout_marginBottom="12dp"/>
-
+    <!-- Informasi Detail -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/bg_rounded_edittext"
         android:padding="16dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="24dp">
 
+        <!-- Deskripsi -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Description"
-                android:textSize="14sp"
-                android:textColor="@android:color/darker_gray"/>
+                android:text="Keterangan"
+                android:textColor="#757575"/>
+
+            <!-- ID: tvDetailDescription -->
             <TextView
                 android:id="@+id/tvDetailDescription"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:text="Bayar makanan"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:gravity="end"/>
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:text="Beli Makan Siang"
+                android:textColor="#212121"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#EEEEEE"
-            android:layout_marginVertical="8dp"/>
+            android:layout_marginVertical="12dp"/>
 
+        <!-- Tanggal -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Date"
-                android:textSize="14sp"
-                android:textColor="@android:color/darker_gray"/>
+                android:text="Tanggal"
+                android:textColor="#757575"/>
+
+            <!-- ID: tvDetailDate -->
             <TextView
                 android:id="@+id/tvDetailDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:text="Sat, 3 Nov 2024"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:gravity="end"/>
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:text="03 Des 2025"
+                android:textColor="#212121"/>
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#EEEEEE"
-            android:layout_marginVertical="8dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Type"
-                android:textSize="14sp"
-                android:textColor="@android:color/darker_gray"/>
-            <TextView
-                android:id="@+id/tvDetailType"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
-                android:text="Expense"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:gravity="end"/>
-        </LinearLayout>
-
     </LinearLayout>
 
+    <!-- Tombol Aksi -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:weightSum="2">
 
+        <!-- ID: btnDetailEdit -->
         <Button
-            android:id="@+id/btnEdit"
+            android:id="@+id/btnDetailEdit"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Edit"
-            android:textStyle="bold"
-            android:backgroundTint="@color/teal_primary"
             android:layout_marginEnd="8dp"
-            app:icon="@android:drawable/ic_menu_edit"
-            app:iconGravity="textStart"/>
+            android:textColor="@color/teal_dark"
+            app:strokeColor="@color/teal_dark"/>
 
+        <!-- ID: btnDetailDelete -->
         <Button
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnDetailDelete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Delete"
-            android:textStyle="bold"
-            android:backgroundTint="@color/expense_red"
+            android:text="Hapus"
             android:layout_marginStart="8dp"
-            app:icon="@android:drawable/ic_menu_delete"
-            app:iconGravity="textStart"/>
-
+            android:backgroundTint="@color/expense_red"/>
     </LinearLayout>
 
 </LinearLayout>

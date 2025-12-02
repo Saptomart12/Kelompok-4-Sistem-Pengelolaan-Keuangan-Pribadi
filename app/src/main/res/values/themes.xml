@@ -1,17 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-<<<<<<< HEAD
     <style name="Base.Theme.FourSave" parent="Theme.Material3.DayNight.NoActionBar">
-=======
-    <style name="Base.Theme.Foursave" parent="Theme.Material3.DayNight.NoActionBar">
->>>>>>> bb82cc1fb87c6fc4bdcd2c391002d3c11a2a1b18
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-<<<<<<< HEAD
     <style name="Theme.FourSave" parent="Base.Theme.FourSave" />
-=======
-    <style name="Theme.Foursave" parent="Base.Theme.Foursave" />
->>>>>>> bb82cc1fb87c6fc4bdcd2c391002d3c11a2a1b18
 </resources>
