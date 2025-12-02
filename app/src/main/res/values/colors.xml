@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_primary">#4DB6AC</color>
+    <color name="teal_dark">#009688</color>
+    <color name="text_link">#2E8B57</color>
+    <color name="income_green">#4CAF50</color>
+    <color name="expense_red">#F44336</color>
+</resources>
